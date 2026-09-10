@@ -73,14 +73,62 @@
 
   <div class="about-wrap">
     <div class="about-illustration" data-reveal="up">
-      <svg viewBox="0 0 200 260" width="160" height="210" aria-hidden="true">
-        <ellipse cx="100" cy="230" rx="70" ry="14" fill="#F6DCE4"/>
-        <circle cx="100" cy="90" r="55" fill="#FFF3F0"/>
-        <path d="M55 80c0-30 24-52 45-52s45 22 45 52c0 8-2 15-5 20H60c-3-5-5-12-5-20z" fill="#C98A63" opacity="0.85"/>
-        <rect x="70" y="140" width="60" height="90" rx="24" fill="#F2A9C0"/>
-        <circle cx="82" cy="95" r="4" fill="#5b4636"/>
-        <circle cx="118" cy="95" r="4" fill="#5b4636"/>
-        <path d="M88 112c4 5 20 5 24 0" stroke="#5b4636" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <svg viewBox="0 0 220 220" width="190" height="190" aria-hidden="true">
+        <!-- soft shadow base -->
+        <ellipse cx="110" cy="195" rx="65" ry="12" fill="#F6DCE4" opacity="0.6"/>
+
+        <!-- leaves -->
+        <path d="M108 150c-18-6-30-22-28-40 16 2 30 14 32 32 2-18 16-30 32-32 2 18-10 34-28 40" fill="#CDE0B8" opacity="0.85"/>
+
+        <!-- ribbon stem -->
+        <path d="M110 150c-2 10-2 18 0 26" stroke="#E88BAA" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M92 172c10 6 26 6 36 0" stroke="#E88BAA" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+        <!-- big flower left -->
+        <g transform="translate(72,90)">
+          <circle cx="-16" cy="-8" r="15" fill="#F2A9C0"/>
+          <circle cx="16" cy="-8" r="15" fill="#F2A9C0"/>
+          <circle cx="0" cy="-24" r="15" fill="#F2A9C0"/>
+          <circle cx="-14" cy="8" r="15" fill="#F2A9C0"/>
+          <circle cx="14" cy="8" r="15" fill="#F2A9C0"/>
+          <circle cx="0" cy="0" r="12" fill="#FBEAEF"/>
+          <circle cx="0" cy="0" r="6" fill="#E88BAA"/>
+        </g>
+
+        <!-- medium flower right -->
+        <g transform="translate(150,75) scale(0.8)">
+          <circle cx="-16" cy="-8" r="15" fill="#F6C6D6"/>
+          <circle cx="16" cy="-8" r="15" fill="#F6C6D6"/>
+          <circle cx="0" cy="-24" r="15" fill="#F6C6D6"/>
+          <circle cx="-14" cy="8" r="15" fill="#F6C6D6"/>
+          <circle cx="14" cy="8" r="15" fill="#F6C6D6"/>
+          <circle cx="0" cy="0" r="12" fill="#FFF7F3"/>
+          <circle cx="0" cy="0" r="6" fill="#F2A9C0"/>
+        </g>
+
+        <!-- small flower bottom center -->
+        <g transform="translate(112,130) scale(0.55)">
+          <circle cx="-16" cy="-8" r="15" fill="#E88BAA"/>
+          <circle cx="16" cy="-8" r="15" fill="#E88BAA"/>
+          <circle cx="0" cy="-24" r="15" fill="#E88BAA"/>
+          <circle cx="-14" cy="8" r="15" fill="#E88BAA"/>
+          <circle cx="14" cy="8" r="15" fill="#E88BAA"/>
+          <circle cx="0" cy="0" r="12" fill="#FBEAEF"/>
+          <circle cx="0" cy="0" r="6" fill="#C9628A"/>
+        </g>
+
+        <!-- scattered hearts & dots -->
+        <text x="40" y="55" font-size="18" fill="#E88BAA" opacity="0.8">♡</text>
+        <text x="168" y="130" font-size="14" fill="#F2A9C0" opacity="0.8">♡</text>
+        <circle cx="55" cy="140" r="4" fill="#F2A9C0" opacity="0.7"/>
+        <circle cx="175" cy="55" r="3" fill="#E88BAA" opacity="0.7"/>
+        <circle cx="30" cy="100" r="3" fill="#F6C6D6" opacity="0.8"/>
+
+        <!-- little name ribbon banner -->
+        <g transform="translate(110,190)">
+          <path d="M-45 0 L-32 -10 L32 -10 L45 0 L32 10 L-32 10 Z" fill="#FBEAEF" stroke="#F2A9C0" stroke-width="1.5"/>
+          <text x="0" y="5" font-family="Caveat, cursive" font-size="18" fill="#C9628A" text-anchor="middle">Adel ♡</text>
+        </g>
       </svg>
     </div>
 

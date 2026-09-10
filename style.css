@@ -616,3 +616,21 @@ img{ max-width:100%; display:block; }
 
 /* ---- Polaroid gentle wiggle target (transform handled by GSAP) ---- */
 .polaroid{ will-change: transform; }
+
+/* ---- Subtle section-corner decorations (About/Favorites/Photos/Memories/Letter) ---- */
+.deco-subtle{
+  opacity: 0.32;
+  font-size: 1.4rem;
+}
+.deco-subtle.deco-star{ font-size: 1rem; }
+
+.deco-corner-tl{ top: 14px; left: 14px; }
+.deco-corner-tr{ top: 14px; right: 14px; }
+.deco-corner-bl{ bottom: 14px; left: 14px; }
+.deco-corner-br{ bottom: 14px; right: 14px; }
+
+@media (max-width: 640px){
+  .deco-subtle{ font-size: 1.15rem; opacity: 0.28; }
+  .deco-corner-tl,.deco-corner-tr{ top: 8px; }
+  .deco-corner-bl,.deco-corner-br{ bottom: 8px; }
+}

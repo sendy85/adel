@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adel's Little Scrapbook ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= 1. COVER ================= -->
+<section class="page cover-page" id="cover">
+  <div class="paper-texture"></div>
+
+  <!-- decorations -->
+  <div class="deco deco-flower deco-1" data-float>✿</div>
+  <div class="deco deco-flower deco-2" data-float>❀</div>
+  <div class="deco deco-heart deco-3" data-float>♡</div>
+  <div class="deco deco-heart deco-4" data-float>♡</div>
+  <div class="deco deco-star deco-5" data-float>✦</div>
+  <div class="deco deco-star deco-6" data-float>✧</div>
+  <div class="washi washi-1"></div>
+  <div class="washi washi-2"></div>
+
+  <div class="cover-content">
+    <p class="cover-eyebrow" data-cover-el>a little digital scrapbook</p>
+
+    <!-- VECTOR PLACEHOLDER -->
+    <div class="cover-illustration" data-cover-el>
+      <svg viewBox="0 0 220 220" width="180" height="180" aria-hidden="true">
+        <circle cx="110" cy="110" r="100" fill="#FBEAEF"/>
+        <path d="M110 150c-28-18-46-34-46-56 0-16 13-27 28-27 10 0 19 6 24 15 5-9 14-15 24-15 15 0 28 11 28 27 0 22-18 38-46 56z" fill="#F2A9C0"/>
+        <circle cx="70" cy="70" r="6" fill="#E88BAA" opacity="0.6"/>
+        <circle cx="150" cy="60" r="4" fill="#E88BAA" opacity="0.6"/>
+        <circle cx="160" cy="150" r="5" fill="#E88BAA" opacity="0.5"/>
+      </svg>
+    </div>
+
+    <h1 class="cover-name" data-cover-el>Adel <span class="heart">♡</span></h1>
+    <p class="cover-sub" data-cover-el>a little scrapbook made just for you</p>
+
+    <button class="btn-open" id="openBtn" data-cover-el>
+      Open Scrapbook <span class="heart">♡</span>
+    </button>
+  </div>
+</section>
+
+<!-- ================= MUSIC PLAYER ================= -->
+<!-- MUSIC FILE: music/about-you.mp3 -->
+<audio id="bgMusic" src="music/about-you.mp3" loop preload="none"></audio>
+
+<div class="music-player" id="musicPlayer">
+  <div class="music-icon" id="musicIcon">♫</div>
+  <div class="music-info">
+    <span class="music-title">About You</span>
+    <div class="music-controls">
+      <button id="playPauseBtn" aria-label="Play / Pause">▶</button>
+      <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="0.6" aria-label="Volume">
+      <button id="muteBtn" aria-label="Mute">🔊</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 2. ABOUT ================= -->
+<section class="page about-page" id="about">
+  <div class="paper-texture"></div>
+  <p class="section-label">01 · about her</p>
+  <h2 class="section-title">Meet Adel <span class="tag-emoji">🌷</span></h2>
+
+  <div class="about-wrap">
+    <div class="about-illustration" data-reveal="up">
+      <svg viewBox="0 0 200 260" width="160" height="210" aria-hidden="true">
+        <ellipse cx="100" cy="230" rx="70" ry="14" fill="#F6DCE4"/>
+        <circle cx="100" cy="90" r="55" fill="#FFF3F0"/>
+        <path d="M55 80c0-30 24-52 45-52s45 22 45 52c0 8-2 15-5 20H60c-3-5-5-12-5-20z" fill="#C98A63" opacity="0.85"/>
+        <rect x="70" y="140" width="60" height="90" rx="24" fill="#F2A9C0"/>
+        <circle cx="82" cy="95" r="4" fill="#5b4636"/>
+        <circle cx="118" cy="95" r="4" fill="#5b4636"/>
+        <path d="M88 112c4 5 20 5 24 0" stroke="#5b4636" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="about-notes">
+      <!-- EDIT INFORMASI ADEl DI SINI -->
+      <div class="paper-note note-1" data-reveal="paper">
+        <span class="note-label">Nickname</span>
+        <span class="note-value">Adel</span>
+      </div>
+      <div class="paper-note note-2" data-reveal="paper">
+        <span class="note-label">Hobby</span>
+        <span class="note-value">Sleeping</span>
+      </div>
+      <div class="paper-note note-3" data-reveal="paper">
+        <span class="note-label">Personality</span>
+        <span class="note-value">Cheerful</span>
+      </div>
+      <div class="paper-note note-4" data-reveal="paper">
+        <span class="note-label">Fun Fact</span>
+        <span class="note-value">Cries easily</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. FAVORITE THINGS ================= -->
+<section class="page favorites-page" id="favorites">
+  <div class="paper-texture"></div>
+  <p class="section-label">02 · favorite things</p>
+  <h2 class="section-title">Her Little Favorites <span class="tag-emoji">🎀</span></h2>
+
+  <div class="favorites-grid">
+    <div class="fav-card rot-1" data-reveal="card">
+      <span class="fav-emoji">🍜</span>
+      <span class="fav-label">Favorite Food</span>
+      <span class="fav-value">Mie</span>
+    </div>
+    <div class="fav-card rot-2" data-reveal="card">
+      <span class="fav-emoji">🎬</span>
+      <span class="fav-label">Favorite Show</span>
+      <span class="fav-value">Cocomelon</span>
+    </div>
+    <div class="fav-card rot-3" data-reveal="card">
+      <span class="fav-emoji">🎀</span>
+      <span class="fav-label">Favorite Color</span>
+      <span class="fav-value">Pink</span>
+    </div>
+    <div class="fav-card rot-4" data-reveal="card">
+      <span class="fav-emoji">🐱</span>
+      <span class="fav-label">Favorite Animal</span>
+      <span class="fav-value">Cat</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. PHOTO WALL ================= -->
+<section class="page photos-page" id="photos">
+  <div class="paper-texture"></div>
+  <p class="section-label">03 · little moments</p>
+  <h2 class="section-title">Photo Wall <span class="tag-emoji">📸</span></h2>
+
+  <div class="photo-wall">
+    <!-- GANTI FOTO ADEl DI SINI -->
+    <figure class="polaroid p-1" data-reveal="from-left">
+      <span class="polaroid-frame">
+        <img src="images/adel-01.jpg" alt="Adel" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="ph-placeholder" style="display:none">
+          <svg viewBox="0 0 100 100" width="60" height="60"><rect width="100" height="100" fill="#FBEAEF"/><circle cx="50" cy="42" r="16" fill="#F2A9C0"/><path d="M20 85c6-20 20-30 30-30s24 10 30 30" fill="#F2A9C0"/></svg>
+        </span>
+      </span>
+      <figcaption>a little moment</figcaption>
+    </figure>
+
+    <figure class="polaroid p-2" data-reveal="from-right">
+      <span class="polaroid-frame">
+        <img src="images/adel-02.jpg" alt="Adel" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="ph-placeholder" style="display:none">
+          <svg viewBox="0 0 100 100" width="60" height="60"><rect width="100" height="100" fill="#FBEAEF"/><circle cx="50" cy="42" r="16" fill="#F2A9C0"/><path d="M20 85c6-20 20-30 30-30s24 10 30 30" fill="#F2A9C0"/></svg>
+        </span>
+      </span>
+      <figcaption>good day ♡</figcaption>
+    </figure>
+
+    <figure class="polaroid p-3" data-reveal="from-bottom">
+      <span class="polaroid-frame">
+        <img src="images/adel-03.jpg" alt="Adel" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="ph-placeholder" style="display:none">
+          <svg viewBox="0 0 100 100" width="60" height="60"><rect width="100" height="100" fill="#FBEAEF"/><circle cx="50" cy="42" r="16" fill="#F2A9C0"/><path d="M20 85c6-20 20-30 30-30s24 10 30 30" fill="#F2A9C0"/></svg>
+        </span>
+      </span>
+      <figcaption>one to remember</figcaption>
+    </figure>
+
+    <figure class="polaroid p-4" data-reveal="from-left">
+      <span class="polaroid-frame">
+        <img src="images/adel-04.jpg" alt="Adel" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="ph-placeholder" style="display:none">
+          <svg viewBox="0 0 100 100" width="60" height="60"><rect width="100" height="100" fill="#FBEAEF"/><circle cx="50" cy="42" r="16" fill="#F2A9C0"/><path d="M20 85c6-20 20-30 30-30s24 10 30 30" fill="#F2A9C0"/></svg>
+        </span>
+      </span>
+      <figcaption>just because</figcaption>
+    </figure>
+
+    <figure class="polaroid p-5" data-reveal="from-right">
+      <span class="polaroid-frame">
+        <img src="images/adel-05.jpg" alt="Adel" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="ph-placeholder" style="display:none">
+          <svg viewBox="0 0 100 100" width="60" height="60"><rect width="100" height="100" fill="#FBEAEF"/><circle cx="50" cy="42" r="16" fill="#F2A9C0"/><path d="M20 85c6-20 20-30 30-30s24 10 30 30" fill="#F2A9C0"/></svg>
+        </span>
+      </span>
+      <figcaption>tiny happiness</figcaption>
+    </figure>
+
+    <figure class="polaroid p-6" data-reveal="from-bottom">
+      <span class="polaroid-frame">
+        <img src="images/adel-06.jpg" alt="Adel" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="ph-placeholder" style="display:none">
+          <svg viewBox="0 0 100 100" width="60" height="60"><rect width="100" height="100" fill="#FBEAEF"/><circle cx="50" cy="42" r="16" fill="#F2A9C0"/><path d="M20 85c6-20 20-30 30-30s24 10 30 30" fill="#F2A9C0"/></svg>
+        </span>
+      </span>
+      <figcaption>another memory</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= 5. LITTLE MEMORIES ================= -->
+<section class="page memories-page" id="memories">
+  <div class="paper-texture"></div>
+  <p class="section-label">04 · little memories</p>
+  <h2 class="section-title">Pieces of Memories <span class="tag-emoji">💭</span></h2>
+
+  <div class="timeline">
+    <div class="timeline-line" id="timelineLine"></div>
+
+    <!-- EDIT MEMORY DI SINI -->
+    <div class="memory-item" data-reveal="memory">
+      <div class="memory-paper">
+        <span class="memory-date">12 · 01 · 2026</span>
+        <p>Little moments become the memories we keep</p>
+      </div>
+      <div class="memory-photo">
+        <img src="images/memory-01.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="mp-placeholder" style="display:none">
+          <svg viewBox="0 0 100 100" width="26" height="26"><circle cx="50" cy="40" r="16" fill="#E88BAA" opacity="0.5"/><path d="M20 82c6-18 20-26 30-26s24 8 30 26" fill="#E88BAA" opacity="0.5"/></svg>
+        </span>
+      </div>
+    </div>
+
+    <div class="memory-item" data-reveal="memory">
+      <div class="memory-paper">
+        <span class="memory-date">One for the memory books</span>
+        <p>ust an ordinary night, but I'd replay it a hundred times</p>
+      </div>
+      <div class="memory-photo">
+        <img src="images/memory-02.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="mp-placeholder" style="display:none">
+          <svg viewBox="0 0 100 100" width="26" height="26"><circle cx="50" cy="40" r="16" fill="#E88BAA" opacity="0.5"/><path d="M20 82c6-18 20-26 30-26s24 8 30 26" fill="#E88BAA" opacity="0.5"/></svg>
+        </span>
+      </div>
+    </div>
+
+    <div class="memory-item" data-reveal="memory">
+      <div class="memory-paper">
+        <span class="memory-date">Just the two of us</span>
+        <p>The plates were empty, but the memory never runs out</p>
+      </div>
+      <div class="memory-photo">
+        <img src="images/memory-03.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="mp-placeholder" style="display:none">
+          <svg viewBox="0 0 100 100" width="26" height="26"><circle cx="50" cy="40" r="16" fill="#E88BAA" opacity="0.5"/><path d="M20 82c6-18 20-26 30-26s24 8 30 26" fill="#E88BAA" opacity="0.5"/></svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. LITTLE LETTER ================= -->
+<section class="page letter-page" id="letter">
+  <div class="paper-texture"></div>
+  <p class="section-label">05 · a little letter</p>
+  <h2 class="section-title">There is something for you <span class="tag-emoji">💌</span></h2>
+  <p class="letter-hint">You have a little letter...</p>
+
+  <div class="envelope-wrap">
+    <div class="envelope" id="envelope">
+      <div class="envelope-back"></div>
+      <div class="envelope-letter" id="envelopeLetter">
+        <!-- EDIT SURAT DI SINI -->
+        <p class="letter-greeting">Dear Adel,</p>
+        <p class="letter-body">bai</p>
+        <p class="letter-sign">— from someone who made this little scrapbook ♡</p>
+      </div>
+      <div class="envelope-flap"></div>
+      <div class="envelope-seal">♡</div>
+    </div>
+    <p class="envelope-tap-hint" id="envelopeHint">tap to open</p>
+  </div>
+</section>
+
+<!-- ================= 7. LAST PAGE ================= -->
+<section class="page last-page" id="lastpage">
+  <div class="paper-texture"></div>
+  <div class="deco deco-flower deco-7" data-float>✿</div>
+  <div class="deco deco-heart deco-8" data-float>♡</div>
+  <div class="deco deco-star deco-9" data-float>✦</div>
+
+  <div class="last-content">
+    <p class="last-line" data-reveal="fade">And this is just a little scrapbook...</p>
+    <p class="last-line last-made" data-reveal="fade">made for Adel ♡</p>
+    <p class="last-symbols" data-reveal="fade">✿ · ♡ · ✿</p>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

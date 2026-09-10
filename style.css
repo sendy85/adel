@@ -35,8 +35,8 @@ img{ max-width:100%; display:block; }
 
 .page{
   position: relative;
-  min-height: 100vh;
-  padding: 70px 8vw 90px;
+  min-height: 0;
+  padding: 70px 8vw 70px;
   overflow: hidden;
 }
 
@@ -544,7 +544,7 @@ img{ max-width:100%; display:block; }
 }
 
 @media (max-width: 640px){
-  .page{ padding: 60px 6vw 70px; }
+  .page{ padding: 50px 6vw 50px; }
 
   .photo-wall{ grid-template-columns: 1fr 1fr; gap: 26px 18px; }
   .about-wrap{ flex-direction:column; text-align:center; }

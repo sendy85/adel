@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   coverTl
     .from('.cover-page', { opacity: 0, duration: 1.2 })
-    .from('.deco', {
+    .from('.cover-page .deco', {
       opacity: 0,
       scale: 0,
       duration: 0.6,
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     openTl
       .to(openBtn, { scale: 0.92, duration: 0.15, ease: 'power1.in' })
       .to('.cover-content', { opacity: 0, y: -20, duration: 0.6, ease: 'power2.in' }, '-=0.05')
-      .to('.deco', { opacity: 0, scale: 0.6, duration: 0.5, stagger: 0.04 }, '<')
+      .to('.cover-page .deco', { opacity: 0, scale: 0.6, duration: 0.5, stagger: 0.04 }, '<')
       .to('.cover-page', {
         opacity: 0,
         duration: 0.7,
